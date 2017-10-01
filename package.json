@@ -1,0 +1,28 @@
+{
+  "name": "simplebot",
+  "version": "1.0.0",
+  "main": "main.js",
+  "keywords": [],
+  "author": "Kyle Zhang",
+  "license": "MIT",
+  "contributors": [],
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "^1.17.1",
+    "bluebird": "^3.4.6",
+    "request": "^2.79.0",
+    "async-request": "^1.2.0",
+    "fs": "0.0.1-security",
+    "moment": "^2.16.0",
+    "wechat": "2.0.3"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  },
+  "scripts": {
+    "prepublish": "zip -r target/simplebot.zip node_modules connectors utils data manifest.json *.js"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  }
+}

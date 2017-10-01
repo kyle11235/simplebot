@@ -1,0 +1,9 @@
+[
+  	{
+  		"client": "WECHAT",
+		"name": "school",
+		"verifyToken": "school",
+		"appId": "xxx",
+		"appSecret": "xxx"
+  	}
+]

@@ -1,0 +1,31 @@
+
+----------- wechat document
+https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140453
+
+----------- fake signature (Java)
+String token = "school";
+String timestamp = "school";
+String nonce = "school";
+
+String[] arr = new String[] { token, timestamp, nonce };
+Arrays.sort(arr);
+
+StringBuilder content = new StringBuilder();
+for (int i = 0; i < arr.length; i++) {
+    content.append(arr[i]);
+}
+String signature = ShaUtil.getSha1(content.toString());
+System.out.println(signature);
+
+----------- fake message
+http://localhost:9090/wechat/school?signature=9edeedd17b864b55dc863264b19a91af4526c20e&timestamp=school&nonce=school
+
+
+<xml>
+ <ToUserName><![CDATA[toUser]]></ToUserName>
+ <FromUserName><![CDATA[onDHiwnAMbzeTeWmQpKsbuJ8B0xI]]></FromUserName>
+ <CreateTime>1348831860</CreateTime>
+ <MsgType><![CDATA[text]]></MsgType>
+ <Content><![CDATA[this is a test]]></Content>
+ <MsgId>1234567890123456</MsgId>
+ </xml>
