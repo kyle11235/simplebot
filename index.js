@@ -14,8 +14,8 @@ configs.forEach(function (config) {
             config.appId = process.env['WECHAT_APPID'];
             config.appSecret = process.env['WECHAT_APPSECRET'];
             
-            console.log('config.appId=' + config.appId);
-            console.log('config.appSecret=' + config.appSecret);
+            logger.info('config.appId=' + config.appId);
+            logger.info('config.appSecret=' + config.appSecret);
             
             WeChatConnector.createBot(app, config);
             break;
