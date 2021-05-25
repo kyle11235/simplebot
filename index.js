@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 configs.forEach(function (config) {
     switch (config.client) {
         case 'WECHAT':
+            config.appId = process.env['WECHAT_APPID'];
+            config.appSecret = process.env['WECHAT_APPSECRET'];
             WeChatConnector.createBot(app, config);
             break;
     }

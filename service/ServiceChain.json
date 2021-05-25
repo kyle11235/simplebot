@@ -1,12 +1,3 @@
 [
-  "HelloWorld",
-  "Help",
-  "CheckWeather",
-  "CheckTimetable",
-  "CheckCET",
-  "OperateCard",
-  "OrderCourse",
-  "OperateNetwork",
-  "SayHi",
-  "NotUnderstand"
+  "HelloWorld"
 ]

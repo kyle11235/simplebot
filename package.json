@@ -1,7 +1,7 @@
 {
   "name": "simplebot",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "index.js",
   "keywords": [],
   "author": "Kyle Zhang",
   "license": "MIT",

@@ -1,8 +1,8 @@
 [
   	{
   		"client": "WECHAT",
-		"name": "school",
-		"verifyToken": "school",
+		"name": "demo",
+		"verifyToken": "demo",
 		"appId": "xxx",
 		"appSecret": "xxx"
   	}
