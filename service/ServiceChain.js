@@ -20,8 +20,8 @@ chain = function (index, message, config) {
                     resolve(that.chain(++index, message, config));
                 }
             }).catch(function(error){
-                logger.error(error);
-                reject(error);
+                logger.error('error catch in chain func=', error);
+                resolve(error);
             });
         }
     });
